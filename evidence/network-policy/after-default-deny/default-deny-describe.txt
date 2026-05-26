@@ -1,0 +1,12 @@
+Name:         default-deny-all
+Namespace:    microseg-demo
+Created on:   2026-05-26 16:57:07 +0700 +07
+Labels:       <none>
+Annotations:  <none>
+Spec:
+  PodSelector:     <none> (Allowing the specific traffic to all pods in this namespace)
+  Allowing ingress traffic:
+    <none> (Selected pods are isolated for ingress connectivity)
+  Allowing egress traffic:
+    <none> (Selected pods are isolated for egress connectivity)
+  Policy Types: Ingress, Egress

@@ -1,0 +1,3 @@
+NAME                               READY   STATUS    RESTARTS   AGE   IP            NODE           NOMINATED NODE   READINESS GATES
+backend-nginx-7cf78c995-4plj8      1/1     Running   0          53m   10.42.2.188   k8s-worker-2   <none>           <none>
+client-netshoot-7fd75c8c77-smjk8   1/1     Running   0          53m   10.42.1.170   k8s-worker-1   <none>           <none>

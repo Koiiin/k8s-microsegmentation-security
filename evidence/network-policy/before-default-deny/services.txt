@@ -1,0 +1,2 @@
+NAME          TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+backend-svc   ClusterIP   10.43.100.111   <none>        80/TCP    53m

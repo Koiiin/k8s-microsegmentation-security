@@ -1,0 +1,2 @@
+NAME               POD-SELECTOR   AGE
+default-deny-all   <none>         3m24s
