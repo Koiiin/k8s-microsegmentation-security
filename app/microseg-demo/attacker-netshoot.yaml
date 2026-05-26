@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: attacker-netshoot
+  namespace: microseg-demo
+  labels:
+    app: attacker-netshoot
+    tier: attacker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: attacker-netshoot
+  template:
+    metadata:
+      labels:
+        app: attacker-netshoot
+        tier: attacker
+        security-zone: untrusted
+    spec:
+      nodeSelector:
+        node-zone: frontend-zone
+      containers:
+        - name: netshoot
+          image: nicolaka/netshoot:latest
+          command: ["sleep", "36000"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "150m"
+              memory: "256Mi"
