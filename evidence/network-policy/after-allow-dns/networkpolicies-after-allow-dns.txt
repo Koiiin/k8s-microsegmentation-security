@@ -1,0 +1,3 @@
+NAME               POD-SELECTOR   AGE
+allow-dns-egress   <none>         37s
+default-deny-all   <none>         16m

@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-client-egress-to-backend
+  namespace: microseg-demo
+spec:
+  podSelector:
+    matchLabels:
+      app: client-netshoot
+  policyTypes:
+    - Egress
+  egress:
+    - to:
+        - podSelector:
+            matchLabels:
+              app: backend-nginx
+      ports:
+        - protocol: TCP
+          port: 80

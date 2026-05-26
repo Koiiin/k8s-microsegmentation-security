@@ -1,0 +1,5 @@
+NAME                                POD-SELECTOR          AGE
+allow-backend-ingress-from-client   app=backend-nginx     2m56s
+allow-client-egress-to-backend      app=client-netshoot   3m16s
+allow-dns-egress                    <none>                4m8s
+default-deny-all                    <none>                20m
