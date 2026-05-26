@@ -1,0 +1,1 @@
+kube-system   cilium         3         3         3       3            3           kubernetes.io/os=linux   141m

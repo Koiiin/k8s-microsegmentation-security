@@ -1,0 +1,8 @@
+cilium-86k6m                                            1/1     Running     0              112m
+cilium-bhpwp                                            1/1     Running     0              112m
+cilium-operator-6f59f8475f-jqg7t                        1/1     Running     1 (122m ago)   141m
+cilium-operator-6f59f8475f-wqbrb                        1/1     Running     1 (126m ago)   141m
+cilium-rt48q                                            1/1     Running     0              112m
+helm-install-rke2-cilium-dwmb7                          0/1     Completed   0              112m
+hubble-relay-7769644656-zqktm                           1/1     Running     0              112m
+hubble-ui-8499bc99fb-f2t8k                              2/2     Running     0              112m

@@ -1,0 +1,4 @@
+NAME           STATUS   ROLES                AGE    VERSION          INTERNAL-IP      EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION       CONTAINER-RUNTIME
+k8s-master-1   Ready    control-plane,etcd   141m   v1.35.4+rke2r1   192.168.113.11   <none>        Ubuntu 22.04.5 LTS   5.15.0-179-generic   containerd://2.2.3-k3s1
+k8s-worker-1   Ready    worker               139m   v1.35.4+rke2r1   192.168.113.12   <none>        Ubuntu 22.04.5 LTS   5.15.0-179-generic   containerd://2.2.3-k3s1
+k8s-worker-2   Ready    worker               139m   v1.35.4+rke2r1   192.168.113.13   <none>        Ubuntu 22.04.5 LTS   5.15.0-179-generic   containerd://2.2.3-k3s1

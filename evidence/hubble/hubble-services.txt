@@ -1,0 +1,4 @@
+hubble-peer                 ClusterIP   10.43.161.63    <none>        443/TCP          112m
+hubble-relay                ClusterIP   10.43.67.205    <none>        80/TCP           112m
+hubble-relay-metrics        ClusterIP   None            <none>        9966/TCP         112m
+hubble-ui                   ClusterIP   10.43.128.255   <none>        80/TCP           112m

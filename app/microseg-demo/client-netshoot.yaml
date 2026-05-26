@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-netshoot
+  namespace: microseg-demo
+  labels:
+    app: client-netshoot
+    tier: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client-netshoot
+  template:
+    metadata:
+      labels:
+        app: client-netshoot
+        tier: frontend
+        security-zone: internet-facing
+    spec:
+      nodeSelector:
+        node-zone: frontend-zone
+      containers:
+        - name: netshoot
+          image: nicolaka/netshoot:latest
+          command: ["sleep", "36000"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "150m"
+              memory: "256Mi"

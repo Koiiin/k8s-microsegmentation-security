@@ -1,0 +1,35 @@
+# Secrets / credentials
+*.key
+*.pem
+*.crt
+*.kubeconfig
+kubeconfig*
+*rancher-token*
+*token*
+*secret*
+*.env
+
+# Do not commit real cluster credentials
+.kube/
+rke2.yaml
+rancher-registration-command.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs can be large; only commit selected sanitized logs
+*.log
+!evidence/**/*.txt
+!evidence/**/*.md
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
+# Temporary files
+tmp/
+temp/

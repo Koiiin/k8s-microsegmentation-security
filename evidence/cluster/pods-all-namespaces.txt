@@ -1,0 +1,38 @@
+NAMESPACE             NAME                                                    READY   STATUS      RESTARTS       AGE
+cattle-fleet-system   fleet-agent-57cb945f4f-j9vxx                            1/1     Running     2 (120m ago)   140m
+cattle-system         cattle-cluster-agent-7486866b47-msrf9                   1/1     Running     7 (119m ago)   139m
+cattle-system         cattle-cluster-agent-7486866b47-wdz5m                   1/1     Running     7 (119m ago)   140m
+cattle-system         rancher-webhook-57db64d86c-682xp                        1/1     Running     1 (122m ago)   137m
+cattle-system         system-upgrade-controller-54c465b8cb-n2qxr              1/1     Running     1 (126m ago)   137m
+kube-system           cilium-86k6m                                            1/1     Running     0              112m
+kube-system           cilium-bhpwp                                            1/1     Running     0              112m
+kube-system           cilium-operator-6f59f8475f-jqg7t                        1/1     Running     1 (122m ago)   141m
+kube-system           cilium-operator-6f59f8475f-wqbrb                        1/1     Running     1 (126m ago)   141m
+kube-system           cilium-rt48q                                            1/1     Running     0              112m
+kube-system           cloud-controller-manager-k8s-master-1                   1/1     Running     3 (125m ago)   141m
+kube-system           etcd-k8s-master-1                                       1/1     Running     1              141m
+kube-system           helm-install-rke2-cilium-dwmb7                          0/1     Completed   0              112m
+kube-system           helm-install-rke2-coredns-rclkv                         0/1     Completed   0              141m
+kube-system           helm-install-rke2-metrics-server-cfnvl                  0/1     Completed   0              141m
+kube-system           helm-install-rke2-runtimeclasses-hbpmv                  0/1     Completed   0              141m
+kube-system           helm-install-rke2-snapshot-controller-bzrtn             0/1     Completed   1              141m
+kube-system           helm-install-rke2-snapshot-controller-crd-smlnq         0/1     Completed   0              141m
+kube-system           helm-install-rke2-traefik-8pfrf                         0/1     Completed   2              141m
+kube-system           helm-install-rke2-traefik-crd-544w5                     0/1     Completed   0              141m
+kube-system           hubble-relay-7769644656-zqktm                           1/1     Running     0              112m
+kube-system           hubble-ui-8499bc99fb-f2t8k                              2/2     Running     0              112m
+kube-system           kube-apiserver-k8s-master-1                             1/1     Running     4              141m
+kube-system           kube-controller-manager-k8s-master-1                    1/1     Running     2 (125m ago)   141m
+kube-system           kube-proxy-k8s-master-1                                 1/1     Running     0              125m
+kube-system           kube-proxy-k8s-worker-1                                 1/1     Running     0              122m
+kube-system           kube-proxy-k8s-worker-2                                 1/1     Running     0              120m
+kube-system           kube-scheduler-k8s-master-1                             1/1     Running     1 (126m ago)   141m
+kube-system           rke2-coredns-rke2-coredns-75bc4f545d-smkc7              1/1     Running     0              122m
+kube-system           rke2-coredns-rke2-coredns-75bc4f545d-xkr6v              1/1     Running     0              122m
+kube-system           rke2-coredns-rke2-coredns-autoscaler-79774bc964-klqbf   1/1     Running     1 (126m ago)   141m
+kube-system           rke2-metrics-server-685458d954-rcx8j                    1/1     Running     1 (122m ago)   138m
+kube-system           rke2-snapshot-controller-7df49fb687-6sj4h               1/1     Running     2 (120m ago)   138m
+kube-system           rke2-traefik-4kwvp                                      1/1     Running     1 (122m ago)   138m
+kube-system           rke2-traefik-v84mp                                      1/1     Running     2 (120m ago)   138m
+microseg-demo         backend-nginx-7cf78c995-4plj8                           1/1     Running     0              43m
+microseg-demo         client-netshoot-7fd75c8c77-smjk8                        1/1     Running     0              42m
