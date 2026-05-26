@@ -63,6 +63,14 @@ if ! $KUBECTL -n kube-system get svc hubble-ui >/dev/null 2>&1; then
   exit 1
 fi
 
+echo "Waiting for Hubble Relay and UI deployments to be ready..."
+
+$KUBECTL -n kube-system rollout status deploy/hubble-relay --timeout=180s || true
+$KUBECTL -n kube-system rollout status deploy/hubble-ui --timeout=180s || true
+
+echo "Checking Hubble pods..."
+$KUBECTL -n kube-system get pods | grep -E 'hubble|cilium'
+
 echo "[5/5] Opening Hubble UI port-forward..."
 echo "Open this URL on Windows:"
 echo "http://192.168.113.11:${LOCAL_PORT}"
