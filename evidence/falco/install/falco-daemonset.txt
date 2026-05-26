@@ -1,0 +1,2 @@
+NAME    DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE
+falco   2         2         2       2            2           <none>          9m35s

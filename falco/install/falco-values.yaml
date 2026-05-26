@@ -1,0 +1,34 @@
+driver:
+  kind: modern_ebpf
+
+tty: true
+
+falco:
+  jsonOutput: true
+  stdoutOutput:
+    enabled: true
+  fileOutput:
+    enabled: true
+    filename: /var/log/falco/events.json
+  programOutput:
+    enabled: false
+
+collectors:
+  containerd:
+    enabled: true
+    socket: /run/k3s/containerd/containerd.sock
+
+falcoctl:
+  artifact:
+    install:
+      enabled: true
+    follow:
+      enabled: true
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 768Mi

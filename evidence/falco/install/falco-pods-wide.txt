@@ -1,0 +1,3 @@
+NAME          READY   STATUS    RESTARTS   AGE     IP           NODE           NOMINATED NODE   READINESS GATES
+falco-ptxwk   2/2     Running   0          9m35s   10.42.2.25   k8s-worker-2   <none>           <none>
+falco-thnq8   2/2     Running   0          9m35s   10.42.1.73   k8s-worker-1   <none>           <none>

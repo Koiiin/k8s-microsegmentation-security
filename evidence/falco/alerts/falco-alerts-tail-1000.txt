@@ -1,0 +1,59 @@
+Tue May 26 14:25:17 2026: Falco version: 0.43.1 (x86_64)
+Tue May 26 14:25:17 2026: Falco initialized with configuration files:
+Tue May 26 14:25:17 2026:    /etc/falco/falco.yaml | schema validation: failed for <root>: Object contains a property that could not be validated using 'properties' or 'additionalProperties' constraints: 'fileOutput'.
+Tue May 26 14:25:17 2026: System info: Linux version 5.15.0-179-generic (buildd@lcy02-amd64-040) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #189-Ubuntu SMP Tue May 5 18:20:56 UTC 2026
+Tue May 26 14:25:17 2026: Loaded plugin 'container@0.6.3' from file /usr/share/falco/plugins/libcontainer.so
+Tue May 26 14:25:17 2026: [libs]: container: Enabled 'podman' container engine.
+Tue May 26 14:25:17 2026: [libs]: container: * enabled container runtime socket at '/host/run/podman/podman.sock'
+Tue May 26 14:25:17 2026: [libs]: container: Enabled 'docker' container engine.
+Tue May 26 14:25:17 2026: [libs]: container: * enabled container runtime socket at '/host/var/run/docker.sock'
+Tue May 26 14:25:17 2026: [libs]: container: Enabled 'cri' container engine.
+Tue May 26 14:25:17 2026: [libs]: container: * enabled container runtime socket at '/host/run/containerd/containerd.sock'
+Tue May 26 14:25:17 2026: [libs]: container: * enabled container runtime socket at '/host/run/crio/crio.sock'
+Tue May 26 14:25:17 2026: [libs]: container: * enabled container runtime socket at '/host/run/k3s/containerd/containerd.sock'
+Tue May 26 14:25:17 2026: [libs]: container: * enabled container runtime socket at '/host/run/host-containerd/containerd.sock'
+Tue May 26 14:25:17 2026: [libs]: container: Enabled 'containerd' container engine.
+Tue May 26 14:25:17 2026: [libs]: container: * enabled container runtime socket at '/host/run/host-containerd/containerd.sock'
+Tue May 26 14:25:17 2026: [libs]: container: Enabled 'lxc' container engine.
+Tue May 26 14:25:17 2026: [libs]: container: Enabled 'libvirt_lxc' container engine.
+Tue May 26 14:25:17 2026: [libs]: container: Enabled 'bpm' container engine.
+Tue May 26 14:25:17 2026: Loading rules from:
+Tue May 26 14:25:17 2026:    /etc/falco/falco_rules.yaml | schema validation: ok
+Tue May 26 14:25:17 2026: Hostname value has been overridden via environment variable to: k8s-worker-2
+Tue May 26 14:25:17 2026: The chosen syscall buffer dimension is: 8388608 bytes (8 MBs)
+Tue May 26 14:25:17 2026: Starting health webserver with threadiness 2, listening on 0.0.0.0:8765
+Tue May 26 14:25:17 2026: Loaded event sources: syscall
+Tue May 26 14:25:17 2026: Enabled event sources: syscall
+Tue May 26 14:25:17 2026: Opening 'syscall' source with modern BPF probe.
+Tue May 26 14:25:17 2026: One ring buffer every '2' CPUs.
+Tue May 26 14:25:17 2026: [libs]: Trying to open the right engine!
+Tue May 26 14:25:13 2026: Falco version: 0.43.1 (x86_64)
+Tue May 26 14:25:13 2026: Falco initialized with configuration files:
+Tue May 26 14:25:13 2026:    /etc/falco/falco.yaml | schema validation: failed for <root>: Object contains a property that could not be validated using 'properties' or 'additionalProperties' constraints: 'fileOutput'.
+Tue May 26 14:25:13 2026: System info: Linux version 5.15.0-179-generic (buildd@lcy02-amd64-040) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #189-Ubuntu SMP Tue May 5 18:20:56 UTC 2026
+Tue May 26 14:25:13 2026: Loaded plugin 'container@0.6.3' from file /usr/share/falco/plugins/libcontainer.so
+Tue May 26 14:25:13 2026: [libs]: container: Enabled 'podman' container engine.
+Tue May 26 14:25:13 2026: [libs]: container: * enabled container runtime socket at '/host/run/podman/podman.sock'
+Tue May 26 14:25:13 2026: [libs]: container: Enabled 'docker' container engine.
+Tue May 26 14:25:13 2026: [libs]: container: * enabled container runtime socket at '/host/var/run/docker.sock'
+Tue May 26 14:25:13 2026: [libs]: container: Enabled 'cri' container engine.
+Tue May 26 14:25:13 2026: [libs]: container: * enabled container runtime socket at '/host/run/containerd/containerd.sock'
+Tue May 26 14:25:13 2026: [libs]: container: * enabled container runtime socket at '/host/run/crio/crio.sock'
+Tue May 26 14:25:13 2026: [libs]: container: * enabled container runtime socket at '/host/run/k3s/containerd/containerd.sock'
+Tue May 26 14:25:13 2026: [libs]: container: * enabled container runtime socket at '/host/run/host-containerd/containerd.sock'
+Tue May 26 14:25:13 2026: [libs]: container: Enabled 'containerd' container engine.
+Tue May 26 14:25:13 2026: [libs]: container: * enabled container runtime socket at '/host/run/host-containerd/containerd.sock'
+Tue May 26 14:25:13 2026: [libs]: container: Enabled 'lxc' container engine.
+Tue May 26 14:25:13 2026: [libs]: container: Enabled 'libvirt_lxc' container engine.
+Tue May 26 14:25:13 2026: [libs]: container: Enabled 'bpm' container engine.
+Tue May 26 14:25:13 2026: Loading rules from:
+Tue May 26 14:25:14 2026:    /etc/falco/falco_rules.yaml | schema validation: ok
+Tue May 26 14:25:14 2026: Hostname value has been overridden via environment variable to: k8s-worker-1
+Tue May 26 14:25:14 2026: The chosen syscall buffer dimension is: 8388608 bytes (8 MBs)
+Tue May 26 14:25:14 2026: Starting health webserver with threadiness 2, listening on 0.0.0.0:8765
+Tue May 26 14:25:14 2026: Loaded event sources: syscall
+Tue May 26 14:25:14 2026: Enabled event sources: syscall
+Tue May 26 14:25:14 2026: Opening 'syscall' source with modern BPF probe.
+Tue May 26 14:25:14 2026: One ring buffer every '2' CPUs.
+Tue May 26 14:25:14 2026: [libs]: Trying to open the right engine!
+14:29:10.258962494: Notice A shell was spawned in a container with an attached terminal | evt_type=execve user=root user_uid=0 user_loginuid=-1 process=sh proc_exepath=/bin/busybox parent=containerd-shim command=sh terminal=34816 exe_flags=EXE_WRITABLE|EXE_LOWER_LAYER container_id=38a067445fef container_name=netshoot container_image_repository=docker.io/nicolaka/netshoot container_image_tag=latest k8s_pod_name=attacker-netshoot-5564684d5d-7zpg8 k8s_ns_name=microseg-demo
