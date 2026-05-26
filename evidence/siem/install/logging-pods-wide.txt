@@ -1,0 +1,5 @@
+NAME                       READY   STATUS    RESTARTS   AGE   IP            NODE           NOMINATED NODE   READINESS GATES
+alloy-cjvqc                2/2     Running   0          13m   10.42.2.36    k8s-worker-2   <none>           <none>
+alloy-ldhvq                2/2     Running   0          13m   10.42.1.182   k8s-worker-1   <none>           <none>
+grafana-6ccb448798-twtnk   1/1     Running   0          14m   10.42.1.71    k8s-worker-1   <none>           <none>
+loki-0                     2/2     Running   0          28m   10.42.2.155   k8s-worker-2   <none>           <none>

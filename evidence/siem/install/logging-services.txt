@@ -1,0 +1,6 @@
+NAME              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)                      AGE
+alloy             ClusterIP   10.43.48.75    <none>        12345/TCP                    13m
+grafana           ClusterIP   10.43.97.34    <none>        80/TCP                       14m
+loki              ClusterIP   10.43.112.50   <none>        3100/TCP,9095/TCP,9096/TCP   28m
+loki-headless     ClusterIP   None           <none>        3100/TCP,9095/TCP,9096/TCP   28m
+loki-memberlist   ClusterIP   None           <none>        7946/TCP                     28m
