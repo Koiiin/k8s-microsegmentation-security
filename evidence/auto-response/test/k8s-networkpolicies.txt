@@ -1,0 +1,5 @@
+NAME                                POD-SELECTOR          AGE
+allow-backend-ingress-from-client   app=backend-nginx     3d6h
+allow-client-egress-to-backend      app=client-netshoot   3d6h
+allow-dns-egress                    <none>                3d6h
+default-deny-all                    <none>                3d6h

@@ -1,0 +1,4 @@
+NAME                                 READY   STATUS    RESTARTS      AGE    IP            NODE           NOMINATED NODE   READINESS GATES   LABELS
+attacker-netshoot-5564684d5d-7zpg8   1/1     Running   3 (31m ago)   3d5h   10.42.1.22    k8s-worker-1   <none>           <none>            app=attacker-netshoot,pod-template-hash=5564684d5d,quarantine=true,security-status=quarantined,security-zone=untrusted,tier=attacker
+backend-nginx-7cf78c995-4plj8        1/1     Running   3 (31m ago)   3d7h   10.42.2.100   k8s-worker-2   <none>           <none>            app=backend-nginx,pod-template-hash=7cf78c995,security-zone=internal,tier=backend
+client-netshoot-7fd75c8c77-smjk8     1/1     Running   3 (31m ago)   3d7h   10.42.1.164   k8s-worker-1   <none>           <none>            app=client-netshoot,pod-template-hash=7fd75c8c77,security-zone=internet-facing,tier=frontend

@@ -1,0 +1,28 @@
+Name:         quarantine-deny-all
+Namespace:    microseg-demo
+Labels:       <none>
+Annotations:  <none>
+API Version:  cilium.io/v2
+Kind:         CiliumNetworkPolicy
+Metadata:
+  Creation Timestamp:  2026-05-29T16:20:41Z
+  Generation:          1
+  Resource Version:    147812
+  UID:                 49bc1f1b-8e1a-4608-a3bc-6c6a505c38b9
+Spec:
+  Egress Deny:
+    To Entities:
+      all
+  Endpoint Selector:
+    Match Labels:
+      Quarantine:  true
+  Ingress Deny:
+    From Entities:
+      all
+Status:
+  Conditions:
+    Last Transition Time:  2026-05-29T16:20:41Z
+    Message:               Policy validation succeeded
+    Status:                True
+    Type:                  Valid
+Events:                    <none>
