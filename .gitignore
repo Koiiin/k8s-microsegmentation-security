@@ -2,17 +2,38 @@
 *.key
 *.pem
 *.crt
+*.p12
+*.pfx
 *.kubeconfig
 kubeconfig*
-*rancher-token*
+rke2.yaml
+*.env
+.env
+.env.*
+
+# Tokens / secrets
 *token*
 *secret*
-*.env
+*password*
+*rancher-registration-command*
 
-# Do not commit real cluster credentials
+# Kubernetes sensitive files
 .kube/
-rke2.yaml
-rancher-registration-command.txt
+admin.conf
+config
+
+# Logs: only selected evidence txt/md are allowed
+*.log
+!evidence/**/*.txt
+!evidence/**/*.md
+
+# Archives / binaries
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.exe
+*.iso
 
 # OS / editor
 .DS_Store
@@ -20,16 +41,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Logs can be large; only commit selected sanitized logs
-*.log
-!evidence/**/*.txt
-!evidence/**/*.md
-
-# Archives
-*.zip
-*.tar
-*.tar.gz
-
 # Temporary files
 tmp/
 temp/
+*.tmp
