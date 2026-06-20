@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-netshoot-l7
+  namespace: l7-demo
+  labels:
+    app: client-netshoot-l7
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client-netshoot-l7
+  template:
+    metadata:
+      labels:
+        app: client-netshoot-l7
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: k8s-worker-1
+      containers:
+        - name: netshoot
+          image: nicolaka/netshoot:latest
+          command: ["sleep", "36000"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "256Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: attacker-netshoot-l7
+  namespace: l7-demo
+  labels:
+    app: attacker-netshoot-l7
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: attacker-netshoot-l7
+  template:
+    metadata:
+      labels:
+        app: attacker-netshoot-l7
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: k8s-worker-1
+      containers:
+        - name: netshoot
+          image: nicolaka/netshoot:latest
+          command: ["sleep", "36000"]
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "256Mi"
